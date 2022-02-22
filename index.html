@@ -1,13 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio LandingPage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <main>
+        <!-- Banner -->
+        <section class="banner">
+          <h2 class="banner__titulo">Website's <br>Content Audit</h2>
+          <h4 class="banner__subtitulo">in 8 Easy Steps</h4>
+          <a href="#" class="banner__boton">Learn more</a>
+        </section>
+
+        <!-- texto, explicación -->
+        <section class="texto">
+          <p class="texto__saludo">Hi Toni,</p>
+          <p class="texto__cuerpo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+            blanditiis.
+          </p>
+          <p class="texto__cuerpoLink">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            nam natus, ex aliquam qui nemo aspernatur.
+            <a class="texto__cuerpolink--link" href="#"
+              >Porro, a natus. Iusto!</a
+            >
+          </p>
+          <article><a href="#" class="texto__boton">Content Audit in 8 Steps</a></article>
+          
+        </section>
+        
+
+        <!-- contacto empresa -->
+        <section class="contacto">
+          <picture class="contacto__avatar">
+            <!-- smartphone -->
+            <source
+              srcset="
+                img/smartphone/avatar.jpg    1x,
+                img/smartphone/avatar@2x.jpg 2x,
+                img/smartphone/avatar@3x.jpg 3x
+              "
+              media="(min-width:300px) and (max-width:767px) and (orientation: portrait)"
+            />
+
+            <!-- ipad -->
+            <source
+              srcset="
+                img/ipad/avatar.jpg    1x,
+                img/ipad/avatar@2x.jpg 2x
+              "
+              media="(min-width:768px) and (max-width:1023px) and (orientation: portrait)"
+            />
+
+            <!-- escritorio -->
+            <source
+              srcset="
+                img/desktop/avatar.jpg    1x,
+                img/desktop/avatar@2x.jpg 2x
+              "
+              media="(min-width:1024px)"
+            />
+
+            <!-- Etiqueta img -->
+            <img src="" alt="avatar" class="imagen"/>
+          </picture>
+
+          <ul class="contacto__datos">
+              <li>Cheers,</li>
+              <li>Zlata Verzhbitskaia</li>
+              <li>SEO PowerSuite</li>
+          </ul>
+
+        </section>
+      </main>
+
+      <footer>
+          <h6 class="copyright">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, repudiandae!</h6>
+      </footer>
+    </div>
+  </body>
 </html>
